@@ -272,8 +272,8 @@ async def chapter_click(client, data, chat_id):
     chapterFile: ChapterFile = await db.get(ChapterFile, chapter.url)
 
     caption = '\n'.join([
-        f'{chapter.manga.name} - {chapter.name}',
-        f'{chapter.get_url()}'
+        f'<b>{chapter.manga.name} - {chapter.name}'</b>,
+        f'<b>@Manga_Manhwa_Hub</b>'
     ])
 
     if not chapterFile:
