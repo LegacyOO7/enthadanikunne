@@ -454,7 +454,7 @@ async def update_mangas():
 
     for url, chapter_list in updated.items():
         for chapter in chapter_list:
-            print(f'{chapter.manga.name} - {chapter.name}')
+            print(f'{chapter.name}')
             for sub in subs_dictionary[url]:
                 try:
                     await chapter_click(bot, chapter.unique(), int(sub))
